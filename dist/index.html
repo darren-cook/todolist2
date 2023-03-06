@@ -4,11 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
+    <title>To Do Tada</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
+<header>
+    <div id="logos">
+        <img src="./images/calendar-check-custom.png" alt="Check Mark Logo">
+        <h1 id="logo-title">To Do... Tada!</h1>
+    </div>
+    <ul id="tools">
+        <li class="tool">Example List</li>
+        <li class="tool">Reset List</li>
+    </ul>
+</header>
 <body>
-    <div>test</div>
+    <div id="task-container">
+        <ul>
+            <li class="task-item task-priority-low">
+                <div class="task-details task-details-top">
+                    <button type="button" class="task-complete">Complete</button>
+                    <div class="task-title">Do Homework</div>
+                    <button type="button" class="task-edit">Edit</button>
+                    <button type="button" class="task-snooze hidden">Snooze</button>
+                    <button type="button" class="task-delete">Delete</button>
+                </div>
+                <div class="task-details task-details-middle">
+                    <div class="task-priority">Priority: Low</div>
+                    <div class="task-type">Type: School</div>
+                </div>
+                <div class="task-details task-details-bottom">
+                    <div class="task-due-date">Due: 3/10/2023</div>
+                    <div class="task-due-time">1:00pm</div>
+                </div>
+            </li>
+        </ul>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
