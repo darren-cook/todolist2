@@ -10,45 +10,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
 </head>
-<header>
-    <div id="logos">
-        <img src="./images/calendar-check-custom.png" alt="Check Mark Logo">
-        <h1 id="logo-title">To Do... Tada!</h1>
-    </div>
-    <div id="tools">
-        <ul id="tool-list">
-            <li id="tool-example" class="tool">Example List</li>
-            <li id="tool-reset" class="tool">Reset List</li>
-        </ul>
-        <div id="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </div>
-</header>
 <body>
-    <div id="task-container">
-        <ul>
-            <li class="task-item task-priority-low">
-                <div class="task-details task-details-top">
-                    <button type="button" class="task-complete">Complete</button>
-                    <div class="task-title">Do Homework</div>
-                    <button type="button" class="task-edit">Edit</button>
-                    <button type="button" class="task-snooze hidden">Snooze</button>
-                    <button type="button" class="task-delete">Delete</button>
-                </div>
-                <div class="task-details task-details-middle">
-                    <div class="task-priority">Priority: Low</div>
-                    <div class="task-type">Type: School</div>
-                </div>
-                <div class="task-details task-details-bottom">
-                    <div class="task-due-date">Due: 3/10/2023</div>
-                    <div class="task-due-time">1:00pm</div>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <header>
+        <div id="logos">
+            <img src="./images/calendar-check-custom.png" alt="Check Mark Logo">
+            <h1 id="logo-title">To Do... Tada!</h1>
+        </div>
+        <div id="tools">
+            <ul id="tool-list">
+                <li id="tool-example" class="tool">Example List</li>
+                <li id="tool-reset" class="tool">Reset List</li>
+            </ul>
+            <div id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="summary-container">
+            <h2>At a Glance:</h2>
+            <div id="summaries">
+                <details>
+                    <summary>
+                        <h3 class="summary-title">Today: 9 Tasks <span class="summary-date">March 9th</span></h3>
+                    </summary>
+                    <ul class="summary-list">
+                        <li>5: School</li>
+                        <li>3: Word</li>
+                        <li>1: Unclassified</li>
+                    </ul>
+                </details>
+
+            </div>
+        </div>
+        <!-- <div id="task-container">
+            <ul>
+                <li class="task-item task-priority-low">
+                    <div class="task-details task-details-top">
+                        <button type="button" class="task-complete">Complete</button>
+                        <div class="task-title">Do Homework</div>
+                        <button type="button" class="task-edit">Edit</button>
+                        <button type="button" class="task-snooze hidden">Snooze</button>
+                        <button type="button" class="task-delete">Delete</button>
+                    </div>
+                    <div class="task-details task-details-middle">
+                        <div class="task-type">Type: School</div>
+                    </div>
+                    <div class="task-details task-details-bottom">
+                        <div class="task-due-date">Due: 3/10/2023</div>
+                        <div class="task-due-time">1:00pm</div>
+                    </div>
+                </li>
+            </ul>
+        </div> -->
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
